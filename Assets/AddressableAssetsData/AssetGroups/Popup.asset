@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Popup
+  m_EditorClassIdentifier: 
+  m_GroupName: Popup
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 1529781d5a67f5c41b15c4b44b469c36
+  m_SerializeEntries:
+  - m_GUID: 1dbda115707f6724cbe12b4f9cfcd830
+    m_Address: RewardPopup
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Popup
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 664c1bce180959240a6c6d8b16bc10ab
+    m_Address: LevelUpPopup
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Popup
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 759e7da1f04e0974d893a6dd7cf538d0
+    m_Address: InfoPopup
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Popup
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e08b26c10b322114fa56e7aae3b79cf0
+    m_Address: ReStartPopup
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Popup
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 06da2a44d11c2144eaa6c42ecc497ff3, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 7dc1ef9587559cf499a6dc63eeacfd4e, type: 2}
+    - {fileID: 11400000, guid: f279805d13d70384c82e64edd37fa76a, type: 2}

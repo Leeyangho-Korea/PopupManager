@@ -94,7 +94,7 @@ public class InfoPopup : BasePopup
 ### 5. 호출 방법
 
 ```csharp
-PopupManager.Instance.ShowPopup<InfoPopup>("InfoPopup", popup =>
+PopupManager.Instance.ShowPopup<BasePopup>(popupName, popup =>
 {
     // 추가 초기화 코드 작성 가능
 });
@@ -103,6 +103,13 @@ PopupManager.Instance.ShowPopup<InfoPopup>("InfoPopup", popup =>
 #### 5-1. 호출 예시
 
 ```charp
+
+  void Start()
+ {
+   ShowPopup("InfoPopup");
+ }
+
+
   void ShowPopup(string popupName)
  {
      PopupManager.Instance.ShowPopup<BasePopup>(popupName, popup =>

@@ -3,7 +3,7 @@ using YH;
 
 public class RewardPopup : BasePopup
 {
-    // esc∑Œ √¢ ¥›±‚ ø©∫Œ
+    // escÎ°ú Ï∞Ω Îã´Í∏∞ Ïó¨Î∂Ä
     public override bool IsEscapeClosable => true;
 
     protected override void HandleAction(string key)
@@ -11,7 +11,7 @@ public class RewardPopup : BasePopup
         switch (key)
         {
             case "Close":
-                Debug.Log("Close ≈¨∏Øµ ");
+                Debug.Log("Close ÌÅ¥Î¶≠Îê®");
                 break;
         }
     }

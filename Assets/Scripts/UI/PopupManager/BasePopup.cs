@@ -15,7 +15,7 @@ namespace YH
 
     public class BasePopup : MonoBehaviour
     {
-        [Header("πˆ∆∞ -> ≈∞ ∏≈«Œ")]
+        [Header("Î≤ÑÌäº -> ÌÇ§ Îß§Ìïë")]
         [SerializeField] private List<UIMapEntry> buttonMappings;
 
         private Dictionary<Button, string> buttonToActionKey = new();
@@ -46,7 +46,7 @@ namespace YH
 
         protected virtual void HandleAction(string key)
         {
-            Debug.Log($"[BasePopup] HandleAction »£√‚µ : {key}");
+            Debug.Log($"[BasePopup] HandleAction Ìò∏Ï∂úÎê®: {key}");
         }
 
         protected void Close()

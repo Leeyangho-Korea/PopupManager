@@ -55,7 +55,7 @@ namespace YH
 
                     if (handle.Status != AsyncOperationStatus.Succeeded)
                     {
-                        Debug.LogError($"[PopupManager] Addressable ·Îµù ½ÇÆĞ: {popupName}");
+                        Debug.LogError($"[PopupManager] Addressable ë¡œë”© ì‹¤íŒ¨: {popupName}");
                         return;
                     }
 
@@ -73,7 +73,7 @@ namespace YH
             var popupScript = popupObj.GetComponent<T>();
             if (popupScript == null)
             {
-                Debug.LogError($"[PopupManager] {popupName}¿¡ {typeof(T).Name} ÄÄÆ÷³ÍÆ®°¡ ¾ø½À´Ï´Ù.");
+                Debug.LogError($"[PopupManager] {popupName}ì— {typeof(T).Name} ì»´í¬ë„ŒíŠ¸ê°€ ì—†ìŠµë‹ˆë‹¤.");
                 return;
             }
 

@@ -18,7 +18,7 @@ public class Test : MonoBehaviour
     {
         PopupManager.Instance.ShowPopup<BasePopup>(popupName, popup =>
         {
-            Debug.Log($"[STACK TEST] {popupName} ÆË¾÷ »ı¼ºµÊ");
+            Debug.Log($"[STACK TEST] {popupName} íŒì—… ìƒì„±ë¨");
         });
     }
 }

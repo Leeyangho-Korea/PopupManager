@@ -8,7 +8,7 @@ public class InfoPopup : BasePopup
         switch (key)
         {
             case "Close":
-                Debug.Log("Close ≈¨∏Øµ ");
+                Debug.Log("Close ÌÅ¥Î¶≠Îê®");
                 break;
         }
     }

@@ -18,7 +18,7 @@ namespace YH
             Popup popup = (Popup)target;
             GameObject go = popup.gameObject;
 
-            if (GUILayout.Button("½ºÅ©¸³Æ® ÀÚµ¿ »ı¼º ¹× ÇÒ´ç"))
+            if (GUILayout.Button("ìŠ¤í¬ë¦½íŠ¸ ìë™ ìƒì„± ë° í• ë‹¹"))
             {
                 string className = go.name;
                 string path = $"Assets/Scripts/UI/Popup/{className}.cs";
@@ -31,7 +31,7 @@ namespace YH
                     List<string> keys = TryExtractActionKeys(go);
                     File.WriteAllText(path, GetScriptTemplate(className, keys));
                     AssetDatabase.Refresh();
-                    Debug.Log($"{className}.cs »ı¼º ¿Ï·á");
+                    Debug.Log($"{className}.cs ìƒì„± ì™„ë£Œ");
 
                     EditorApplication.delayCall += () =>
                     {
@@ -44,26 +44,26 @@ namespace YH
                             {
                                 Undo.AddComponent(go, type);
                                 popup.scriptAttached = true;
-                                Debug.Log($"{className} ½ºÅ©¸³Æ® ÅÛÇÃ¸´ »ı¼º ¹× ÀÚµ¿ ºÎÂø ¿Ï·á");
+                                Debug.Log($"{className} ìŠ¤í¬ë¦½íŠ¸ í…œí”Œë¦¿ ìƒì„± ë° ìë™ ë¶€ì°© ì™„ë£Œ");
                             }
                             else
                             {
-                                Debug.LogWarning("½ºÅ©¸³Æ®°¡ ¾ÆÁ÷ ÄÄÆÄÀÏµÇÁö ¾Ê¾Ò½À´Ï´Ù. Unity ¿¡µğÅÍ¸¦ »õ·Î °íÄ§ÇÏ¼¼¿ä.");
+                                Debug.LogWarning("ìŠ¤í¬ë¦½íŠ¸ê°€ ì•„ì§ ì»´íŒŒì¼ë˜ì§€ ì•Šì•˜ìŠµë‹ˆë‹¤. Unity ì—ë””í„°ë¥¼ ìƒˆë¡œ ê³ ì¹¨í•˜ì„¸ìš”.");
                             }
                         }
                     };
                 }
                 else
                 {
-                    Debug.LogWarning($"{className}.cs ´Â ÀÌ¹Ì Á¸ÀçÇÕ´Ï´Ù.");
+                    Debug.LogWarning($"{className}.cs ëŠ” ì´ë¯¸ ì¡´ì¬í•©ë‹ˆë‹¤.");
                 }
             }
 
-            if (GUILayout.Button("HandleAction switch¹® º¹»ç"))
+            if (GUILayout.Button("HandleAction switchë¬¸ ë³µì‚¬"))
             {
                 List<string> keys = TryExtractActionKeys(go);
                 GUIUtility.systemCopyBuffer = GenerateSwitchBlock(keys);
-                Debug.Log("switch¹® Å¬¸³º¸µå¿¡ º¹»çµÊ. ½ºÅ©¸³Æ®¿¡ ºÙ¿©³ÖÀ¸¼¼¿ä.");
+                Debug.Log("switchë¬¸ í´ë¦½ë³´ë“œì— ë³µì‚¬ë¨. ìŠ¤í¬ë¦½íŠ¸ì— ë¶™ì—¬ë„£ìœ¼ì„¸ìš”.");
             }
         }
 
@@ -101,7 +101,7 @@ namespace YH
             foreach (var key in keys)
             {
                 sb.AppendLine($"        case \"{key}\":");
-                sb.AppendLine($"            Debug.Log(\"{key} Å¬¸¯µÊ\");");
+                sb.AppendLine($"            Debug.Log(\"{key} í´ë¦­ë¨\");");
               //  sb.AppendLine("            Close();");
                 sb.AppendLine("            break;");
             }
@@ -120,7 +120,7 @@ using YH;
 
 public class {className} : BasePopup
 {{
-    // esc·Î Ã¢ ´İ±â ¿©ºÎ
+    // escë¡œ ì°½ ë‹«ê¸° ì—¬ë¶€
     public override bool IsEscapeClosable => true;
     {switchBlock.Replace("\n", "\n    ")}
 }}";

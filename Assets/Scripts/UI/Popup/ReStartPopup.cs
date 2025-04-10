@@ -8,10 +8,10 @@ public class ReStartPopup : BasePopup
         switch (key)
         {
             case "Continue":
-                Debug.Log("Continue ≈¨∏Øµ ");
+                Debug.Log("Continue ÌÅ¥Î¶≠Îê®");
                 break;
             case "Restart":
-                Debug.Log("Restart ≈¨∏Øµ ");
+                Debug.Log("Restart ÌÅ¥Î¶≠Îê®");
                 break;
         }
     }
